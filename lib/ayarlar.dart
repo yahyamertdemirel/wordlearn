@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wordlearn/hakkinda.dart';
 
 class ayarlar extends StatelessWidget {
   @override
@@ -58,7 +59,7 @@ class ayarlar extends StatelessWidget {
                 elevation: 100,
                 textColor: Colors.yellow,
                 color: Colors.blue,
-                onPressed: () {
+                onPressed: () { Navigator.push(context,MaterialPageRoute(builder:(context)=>hakkinda()));
                 },
               ),
             ),

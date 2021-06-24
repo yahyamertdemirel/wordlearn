@@ -1,7 +1,11 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wordlearn/anasayfa.dart';
+import 'package:wordlearn/kullanicigiris.dart';
+import 'package:wordlearn/main.dart';
 import 'kelimealani.dart';
+import 'anasayfa.dart';
 
 class kelimelerim extends StatelessWidget {
   @override
@@ -110,6 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {},
             ),
 
+
           ],
         ),
         backgroundColor: Colors.white,
@@ -124,6 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
+
                   Text(
                     "Kelimeler",
                     style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),

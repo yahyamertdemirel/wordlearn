@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:wordlearn/anasayfa.dart';
 import 'package:wordlearn/kelimelerim.dart';
+import 'package:wordlearn/main.dart';
 
 class kullanicigiris extends StatefulWidget {
   @override
@@ -89,7 +91,7 @@ class _kullanicigirisState extends State<kullanicigiris> {
     if(_formKey.currentState.validate()){
       _formKey.currentState.save();
       if(kullaniciadi=='mert' /*&& sifre=='mert'*/)
-      { Navigator.push(context,MaterialPageRoute(builder:(context)=>kelimelerim()));
+      { Navigator.push(context,MaterialPageRoute(builder:(context)=>anasayfa()));
 
         debugPrint("giriş başarılı ");
 

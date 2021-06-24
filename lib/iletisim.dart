@@ -29,7 +29,7 @@ class iletisim extends StatelessWidget {
                     Icon(Icons.email,size: 40,
                     ),
                     SizedBox(width: 5,),
-                    Text('notet@gmail.com',style: TextStyle(fontSize: 20),)
+                    Text('wordlearn@gmail.com',style: TextStyle(fontSize: 20),)
                   ],
                 ),
               ),

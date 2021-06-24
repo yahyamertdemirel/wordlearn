@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:wordlearn/models/product.dart';
+import 'package:wordlearn/screens/products.dart';
 
 import 'kelimelerim.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:wordlearn/providers/product_provider.dart';
+import 'package:wordlearn/screens/products.dart';
+import 'package:wordlearn/services/firestore_service.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class anasayfa extends StatelessWidget {
   const anasayfa();
@@ -54,28 +62,44 @@ class anasayfa extends StatelessWidget {
               SizedBox(height: 20,),
 
               Container(
+
                 width: 400,
                 margin: EdgeInsets.only(right: 20),
                 height: categoryHeight,
-                decoration: BoxDecoration(color: Colors.orange.shade400, borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Column(
 
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        "Hayvanlar",
-                        style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Icon(Icons.wb_auto_rounded,size: 50,)
-                    ],
+                decoration: BoxDecoration(color: Colors.red.shade400, borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                child: Container(
+
+                  child: Padding(
+
+                    padding: const EdgeInsets.all(20.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Center(
+
+                          child: (MaterialButton
+                            (
+                            height: 10,
+                            child: Text('hayvanlar',style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.w500,),
+
+                            ),
+                            onPressed: () { Navigator.push(context,MaterialPageRoute(builder:(context)=>Products()));},
+                          )
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+
+                        Icon(Icons.face_rounded,size: 50,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
+              SizedBox(height: 20,),
               SizedBox(height: 20,),
 
               Container(
@@ -158,5 +182,6 @@ class anasayfa extends StatelessWidget {
         ),
       ),
     );
+
   }
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "91234857456",
+    "project_id": "wordle-9c71b",
+    "storage_bucket": "wordle-9c71b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91234857456:android:eea663c7ef23f343c9ed35",
+        "android_client_info": {
+          "package_name": "com.example.wordlearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91234857456-0159crb96odb8grelnm6rqarevs8m0rr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv9F8I36R-Sc_2sQz4PFRf-GwJ6XSmhlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91234857456-0159crb96odb8grelnm6rqarevs8m0rr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
